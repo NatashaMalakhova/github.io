@@ -4,12 +4,482 @@
    <head>
       <title>Осьминожка навыков Малаховой Натальи</title>
       <meta charset="UTF-8">
-      <link rel="stylesheet" href="css/style.css">
+      <!-- <link rel="stylesheet" href="css/style.css"> -->
+      <style>
+         body {
+    background-color: #66877c;
+    color: white;
+    margin:0;
+    padding:0;
+    font-size: 24px;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;    
+}
+h1{
+    margin: 0;
+    padding:0;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 37px;
+    font-size: 30px;
+}
+.progress {
+    position: absolute;
+    font-size: 20px;
+    
+}
+.progress:before{
+    content: "";
+    width: 410px;
+    left: 440px;
+    top: 130px;
+    position: absolute;
+    height: 2px;
+	border: none;
+	background: linear-gradient(to right, transparent 50%, #66877c 50%), 
+				linear-gradient(to right, #9e4c4c, #c76262);
+	background-size: 16px 2px, 100% 2px;
+}
+.progress p{
+    position: relative;
+}
+.progress p:first-child{
+    left: 450px;
+    top: 80px;
+}
+.progress p:last-child{
+    left: 800px;
+    top: 37px;
+}
+.img {
+    position: absolute;
+    width: 300px;
+    height: 510px;
+    border-radius: 100% 0 0 100% / 50% 0 0 50%;
+    background: #9e4c4c;
+    top: 140px;
+    left: 130px;  
+}
+.eye {
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 2;
+    top: 300px;
+    left: 170px;
+    box-shadow: 0.1em 0.05em 1px  #352d2d72;
+}
+.eye:before {
+    content: "";
+    background: #000000;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 3;
+    top: 10px;
+    left: 6px;
+    display: inline-block;
+}
+
+.skills {
+    padding-top: 100px;
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 390px;
+    margin-top: 40px;
+}
+li {
+    padding: 3px;
+    padding-left: 15px;
+    list-style-type: none;
+    margin: 2px 0;
+}
+ul li:nth-child(1) {
+    background: #9e4c4c;
+    border-radius: 0 60px 60px 0;
+    width: 50%;
+    height: auto;
+    position: relative;
+}
+ul li:nth-child(1):after {
+    content: "";
+    background: #c76262;
+    border-radius: 0 60px 60px 0;
+    position: absolute;
+    display: inline-block;
+    width: 190%;
+    height: 34px;
+    left: 0;
+    top: 0;
+    z-index: -2;
+}
+ul li:nth-child(2) {
+    background: #9e4c4c;
+    border-radius: 0 60px 60px 0;
+    width: 40%;
+    height: auto;
+    position: relative;
+}
+ul li:nth-child(2):after {
+    content: "";
+    background: #c76262;
+    border-radius: 0 60px 60px 0;
+    position: absolute;
+    display: inline-block;
+    width: 220%;
+    height: 34px;
+    left: 0;
+    top: 0;
+    z-index: -2;
+}
+ul li:nth-child(3) {
+    background: #9e4c4c;
+    border-radius: 0 60px 60px 0;
+    width: 30%;
+    height: auto;
+    position: relative;
+}
+ul li:nth-child(3):after {
+    content: "";
+    background: #c76262;
+    border-radius: 0 60px 60px 0;
+    position: absolute;
+    display: inline-block;
+    width: 220%;
+    height: 34px;
+    left: 0;
+    top: 0;
+    z-index: -2;
+}
+ul li:nth-child(4) {   
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+ul li:nth-child(4):before {
+    content: "";
+    background: #9e4c4c;
+    border-radius: 0 60px 60px 0;
+    width: 2%;
+    position: absolute;
+    display: inline-block;
+    height: 34px;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+ul li:nth-child(4):after {
+    content: "";
+    background: #c76262;
+    border-radius: 0 60px 60px 0;
+    position: absolute;
+    display: inline-block;
+    width: 75%;
+    height: 34px;
+    left: 0;
+    top: 0;
+    z-index: -2;
+}
+ul li:nth-child(5) {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+ul li:nth-child(5):before {
+    content: "";
+    background: #9e4c4c;
+    border-radius: 0 60px 60px 0;
+    width: 5px;
+    position: absolute;
+    display: inline-block;
+    height: 34px;
+    left: 0;
+    top: 0;
+    z-index: -1;  
+}
+ul li:nth-child(5):after {
+    content: "";
+    background: #c76262;
+    border-radius: 0 60px 60px 0;
+    position: absolute;
+    display: inline-block;
+    width: 60%;
+    height: 34px;
+    left: 0;
+    top: 0;
+    z-index: -2;
+}
+ul li:nth-child(6) {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+ul li:nth-child(6):before {
+    content: "";
+    background: #9e4c4c;
+    border-radius: 0 60px 60px 0;
+    position: absolute;
+    display: inline-block;
+    width: 150px;
+    height: 34px;
+    left: 0;
+    top: 0;
+    z-index: -1;
+   
+}
+ul li:nth-child(6):after {
+    content: "";
+    background: #c76262;
+    border-radius: 0 60px 60px 0;
+    position: absolute;
+    display: inline-block;
+    width: 90%;
+    height: 34px;
+    left: 0;
+    top: 0;
+    z-index: -2;
+}
+ul li:nth-child(7) {
+    background: #9e4c4c;
+    border-radius: 0 60px 60px 0;
+    width: 200px;
+    height: auto;
+    position: relative;
+}
+ul li:nth-child(7):after {
+    content: "";
+    background: #c76262;
+    border-radius: 0 60px 60px 0;
+    position: absolute;
+    display: inline-block;
+    width: 150%;
+    height: 34px;
+    left: 0;
+    top: 0;
+    z-index: -2;
+}
+ul li:nth-child(8) {
+    background: #9e4c4c;
+    border-radius: 0 60px 60px 0;
+    width: 100px;
+    height: auto;
+    position: relative;
+}
+ul li:nth-child(8):after {
+    content: "";
+    background: #c76262;
+    border-radius: 0 60px 60px 0;
+    position: absolute;
+    display: inline-block;
+    width: 190%;
+    height: 34px;
+    left: 0;
+    top: 0;
+    z-index: -2;
+}
+ul li:nth-child(9) {
+    background: #9e4c4c;
+    border-radius: 0 60px 60px 0;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+ul li:nth-child(9):after {
+    content: "";
+    background: #c76262;
+    border-radius: 0 60px 60px 0;
+    position: absolute;
+    display: inline-block;
+    width: 110%;
+    height: 34px;
+    left: 0;
+    top: 0;
+    z-index: -2;
+}
+ul li:nth-child(10) {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+ul li:nth-child(10):before {
+    content: "";
+    background: #9e4c4c;
+    border-radius: 0 60px 60px 0;
+    position: absolute;
+    display: inline-block;
+    width: 180px;
+    height: 34px;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+ul li:nth-child(10):after {
+    content: "";
+    background: #c76262;
+    border-radius: 0 60px 60px 0;
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 34px;
+    left: 0;
+    top: 0;
+    z-index: -2;
+}
+ul li:nth-child(11) {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+ul li:nth-child(11):before {
+    content: "";
+    background: #9e4c4c;
+    border-radius: 0 60px 60px 0;
+    width: 2%;
+    position: absolute;
+    display: inline-block;
+    height: 34px;
+    left: 0;
+    top: 0;
+    z-index: -1; 
+}
+ul li:nth-child(11):after {
+    content: "";
+    background: #c76262;
+    border-radius: 0 60px 60px 0;
+    position: absolute;
+    display: inline-block;
+    width: 60%;
+    height: 34px;
+    left: 0;
+    top: 0;
+    z-index: -2;
+}
+ul li:nth-child(12) {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+ul li:nth-child(12):before {
+    content: "";
+    background: #9e4c4c;
+    border-radius: 0 60px 60px 0;
+    position: absolute;
+    display: inline-block;
+    width: 150px;
+    height: 34px;
+    left: 0;
+    top: 0;
+    z-index: -1; 
+}
+ul li:nth-child(12):after {
+    content: "";
+    background: #c76262;
+    border-radius: 0 60px 60px 0;
+    position: absolute;
+    display: inline-block;
+    width: 90%;
+    height: 34px;
+    left: 0;
+    top: 0;
+    z-index: -2;
+}
+ul li:nth-child(13) {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+ul li:nth-child(13):before {
+    content: "";
+    background: #9e4c4c;
+    border-radius: 0 60px 60px 0;
+    position: absolute;
+    display: inline-block;
+    width: 180px;
+    height: 34px;
+    left: 0;
+    top: 0;
+    z-index: -1; 
+}
+ul li:nth-child(13):after {
+    content: "";
+    background: #c76262;
+    border-radius: 0 60px 60px 0;
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 34px;
+    left: 0;
+    top: 0;
+    z-index: -2;
+}
+ul li:nth-child(14):after {
+    content: "";
+    background: #c76262;
+    border-radius: 0 60px 60px 0;
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 34px;
+    left: 10px;
+    top: 570px;
+    z-index: -2;
+}
+.note_1 p{
+    margin:0;
+    padding:0;
+    position: absolute;
+    left: 995px;
+    top: 330px;
+}
+
+.note_1 p:before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    background: #9e4c4c;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    left: -60px;
+    top: -5px;
+}
+
+.note_2 p{
+    margin:0;
+    padding:0;
+    position: absolute;
+    left: 995px;
+    top: 430px;
+}
+.note_2 p:before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    background: #c76262;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    left: -60px;
+    top: -5px; 
+}
+      </style>
    </head>
    <body>
      <h1>Осьминожка навыков Малаховой Натальи</h1>
+     <div class="progress">
+        <p>0%</p>
+        <p>100%</p>
+     </div>
 <div>
       <div class="img"></div>
+      <div class="eye"></div>
       <ul class="skills">
          <li>HTLM</li>
          <li>CSS</li>
@@ -25,14 +495,12 @@
          <li>Ведение переговоров</li>
          <li>Делегирование задач</li>
          <li>новые навыки</li>
-      
       </ul>
-   
-   <div class="note_1">
-      <p>сейчас</p>
-   </div>
-   <div class="note_2">
-         <p>через год</p>
+      <div class="note_1">
+         <p>сейчас</p>
+      </div>
+      <div class="note_2">
+            <p>через год</p>
       </div>
 </div>
    </body>
